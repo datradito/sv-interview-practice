@@ -10,12 +10,12 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-import { PATHS } from "../utils/constants";
+import { PATHS } from "../../utils/constants";
 
 export default function Home() {
   return (
     <Container>
-      <h1> React Challenges </h1>
+      <h1> React Solutions </h1>
       <Grid container spacing={2}>
         {PATHS.map((path, i) => (
           <Grid item xs={12} sm={3} md={6}>
@@ -32,7 +32,7 @@ export default function Home() {
                     <Typography variant="h5">{path}</Typography>
                   </CardContent>
                   <CardActions>
-                    <Button href={`/challenges/${path}`}>{path}</Button>
+                    <Button href={`/solutions/${path}`}>{path}</Button>
                   </CardActions>
                 </Card>
               </Paper>
